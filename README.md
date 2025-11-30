@@ -14,35 +14,33 @@ Exception handling with custom exceptions
 Layered architecture (Controller → Service → Repository)
 
 🗂️ Project Structure
-
 notes-app-backend/
- 
- ├── src/
- 
- │   ├── main/
- 
- │   │   ├── java/com/jhulan/notesapp/
- 
- │   │   │    ├── controller/
- 
- │   │   │    ├── service/
- 
- │   │   │    ├── repository/
- 
- │   │   │    ├── entity/
- 
- │   │   │    ├── exception/
- 
- │   │   └── resources/
- 
- │   │        ├── application.properties
- 
- ├── pom.xml
- 
- ├── mvnw / mvnw.cmd
- 
- └── README.md
+├── .mvn/
+│   └── wrapper/
+│       ├── maven-wrapper.jar
+│       ├── maven-wrapper.properties
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── jhulan/
+│   │   │           └── notesapp/
+│   │   │               ├── controller/
+│   │   │               ├── service/
+│   │   │               ├── repository/
+│   │   │               ├── entity/
+│   │   │               └── exception/
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── static/
+│   └── test/
+├── .gitignore
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── README.md
 
+ 
  🛠️ Tech Stack
 Java 17+
 
