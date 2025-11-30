@@ -16,18 +16,31 @@ Layered architecture (Controller → Service → Repository)
 🗂️ Project Structure
 
 notes-app-backend/
+ 
  ├── src/
+ 
  │   ├── main/
+ 
  │   │   ├── java/com/jhulan/notesapp/
+ 
  │   │   │    ├── controller/
+ 
  │   │   │    ├── service/
+ 
  │   │   │    ├── repository/
+ 
  │   │   │    ├── entity/
+ 
  │   │   │    ├── exception/
+ 
  │   │   └── resources/
+ 
  │   │        ├── application.properties
+ 
  ├── pom.xml
+ 
  ├── mvnw / mvnw.cmd
+ 
  └── README.md
 
  🛠️ Tech Stack
