@@ -18,31 +18,35 @@ A simple RESTful Notes management backend built using **Spring Boot**, following
 
 ## 🗂️ Project Structure
 
+## 🗂️ Project Structure
+
+```bash
 notes-app-backend/
 ├── .mvn/
-│ └── wrapper/
-│ ├── maven-wrapper.jar
-│ └── maven-wrapper.properties
+│   └── wrapper/
+│       ├── maven-wrapper.jar
+│       └── maven-wrapper.properties
 ├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ └── com/
-│ │ │ └── jhulan/
-│ │ │ └── notesapp/
-│ │ │ ├── controller/
-│ │ │ ├── service/
-│ │ │ ├── repository/
-│ │ │ ├── entity/
-│ │ │ └── exception/
-│ │ └── resources/
-│ │ ├── application.properties
-│ │ └── static/
-│ └── test/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── jhulan/
+│   │   │           └── notesapp/
+│   │   │               ├── controller/
+│   │   │               ├── service/
+│   │   │               ├── repository/
+│   │   │               ├── entity/
+│   │   │               └── exception/
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── static/
+│   └── test/
 ├── .gitignore
 ├── mvnw
 ├── mvnw.cmd
 ├── pom.xml
 └── README.md
+```
 
 
 ---
