@@ -1,120 +1,106 @@
-📒 # Notes App Backend
+# 📝 Notes App Backend (Spring Boot)
 
-Spring Boot REST API for creating, updating, deleting, and managing personal notes.
+A simple RESTful Notes management backend built using **Spring Boot**, following a clean architecture with services, controllers, entities, repositories, and global exception handling.
 
-🚀 Features
-Create, update, delete, and retrieve notes
+---
 
-REST API using Spring Boot
+## 🚀 Features
 
-MySQL (or H2) database support
+- Create, Read, Update, Delete (CRUD) notes  
+- REST APIs using Spring Web  
+- JPA + Hibernate for database access  
+- Global exception handling  
+- Lombok for boilerplate reduction  
+- Clean layered architecture  
+- Maven-based Spring Boot project  
 
-Exception handling with custom exceptions
+---
 
-Layered architecture (Controller → Service → Repository)
+## 🗂️ Project Structure
 
-🗂️ Project Structure
 notes-app-backend/
 ├── .mvn/
-│   └── wrapper/
-│       ├── maven-wrapper.jar
-│       ├── maven-wrapper.properties
+│ └── wrapper/
+│ ├── maven-wrapper.jar
+│ └── maven-wrapper.properties
 ├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── jhulan/
-│   │   │           └── notesapp/
-│   │   │               ├── controller/
-│   │   │               ├── service/
-│   │   │               ├── repository/
-│   │   │               ├── entity/
-│   │   │               └── exception/
-│   │   └── resources/
-│   │       ├── application.properties
-│   │       └── static/
-│   └── test/
+│ ├── main/
+│ │ ├── java/
+│ │ │ └── com/
+│ │ │ └── jhulan/
+│ │ │ └── notesapp/
+│ │ │ ├── controller/
+│ │ │ ├── service/
+│ │ │ ├── repository/
+│ │ │ ├── entity/
+│ │ │ └── exception/
+│ │ └── resources/
+│ │ ├── application.properties
+│ │ └── static/
+│ └── test/
 ├── .gitignore
 ├── mvnw
 ├── mvnw.cmd
 ├── pom.xml
 └── README.md
 
- 
- 🛠️ Tech Stack
-Java 17+
 
-Spring Boot
+---
 
-Spring Web
+## 📌 Tech Stack
 
-Spring Data JPA
+- **Java 17+**
+- **Spring Boot**
+- **Spring Web**
+- **Spring Data JPA**
+- **H2 / MySQL** (your choice)
+- **Lombok**
+- **Maven**
 
-MySQL (or H2 for in-memory)
+---
 
-Maven
+## 📡 API Endpoints
 
+### ✔️ Create a Note  
+`POST /api/notes/newnote`
 
-⚙️ How to Run Locally
-1️⃣ Clone the repository
- git clone https://github.com/Jhulan41/notes-app-backend.git
- cd notes-app-backend
+### ✔️ Get All Notes  
+`GET /api/notes`
 
- 2️⃣ Configure the database (MySQL)
- Update src/main/resources/application.properties:
+### ✔️ Get Note by ID  
+`GET /api/notes/{id}`
 
- spring.datasource.url=jdbc:mysql://localhost:3306/notes_app
-spring.datasource.username=root
-spring.datasource.password=yourPassword
+### ✔️ Update Note  
+`PUT /api/notes/{id}`
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+### ✔️ Delete Note  
+`DELETE /api/notes/{id}`
 
-3️⃣ Run the project
-Using Maven Wrapper:
+---
 
-./mvnw spring-boot:run
+## ▶️ How to Run
 
-Or from IntelliJ IDEA: run the main application class.
+mvn spring-boot: run
+The app will start at:
+http://localhost:8080
 
-📡 API Endpoints
-➤ Create a note
-Method: POST
+---
 
-URL: /api/notes
+## ✨ Author
 
-Body:
+**Jhulan Mahato**  
+Full Stack Java Developer
 
-{
-  "title": "Demo",
-  "content": "This is a new note"
-}
+---
 
-➤ Get all notes
-Method: GET
+If you want, I can also add:
 
-URL: /api/notes
+✅ API Testing screenshots  
+✅ JSON examples  
+✅ Setup instructions with MySQL  
+✅ Postman Collection  
+✅ Badges (Build, License, Java version, Stars)  
 
-➤ Get note by ID
-Method: GET
-
-URL: /api/notes/{id}
-
-➤ Update a note
-Method: PUT
-
-URL: /api/notes/{id}
-
-➤ Delete a note
-Method: DELETE
-
-URL: /api/notes/{id}
-
-🧰 Build
-./mvnw clean install
-
-🧑‍💻 Developer
-Jhulan Mahato
-Backend Developer · Java/Spring Boot
+Just tell me!
 
 
